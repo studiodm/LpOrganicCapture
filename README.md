@@ -1,14 +1,14 @@
-# SEO/SEM Organic Capture (javascript.org.js)
+## SEO/SEM Organic Capture (javascript.org.js)
 
 A javascript file that when attched to a landing page which posts to the Enhanced Buyflow, will capture Search Engine Refferel with Organic terms, Except in the case of google which will capture "google(organic)". 
 
-## What does it do?
+#### What does it do?
 
 	1. Capture SEO referrals and place into the lead DB.
 	2. Post data to lead qual.
 	3. Create a user cookie with keywords.
 
-## Implement:
+#### Implement:
 
 	1. attach the script to the head tag of each landing page: 
 		a. <script type="text/javascript" src="<?php echo $config['siteRoot']; ?>versions/<?php echo $version; ?>/assets/js/javascript.org.js"></script>
@@ -33,5 +33,5 @@ A javascript file that when attched to a landing page which posts to the Enhance
 			'urlParams':window.location.search,
 			'referringSite':window.location.host,
 			'leadStep':'qual',
-####		'leadOptional':getkeywords()
+	'leadOptional':getkeywords()
 		},
