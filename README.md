@@ -11,7 +11,7 @@ A javascript file that when attched to a landing page which posts to the Enhance
 #### Implement:
 
 	1. attach the script to the head tag of each landing page: 
-		a. <script type="text/javascript" src="<?php echo $config['siteRoot']; ?>versions/<?php echo $version; ?>/assets/js/javascript.org.js"></script>
+		a. <script type="text/javascript" src="dir/version/assets/js/javascript.org.js"></script>
 		b. this is not dependent upon jquery or similar framework.
         
 	2. add script call to ajax data array in qualify.js:
