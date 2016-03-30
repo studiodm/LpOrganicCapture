@@ -15,7 +15,7 @@ A javascript file that when attched to a landing page which posts to the Enhance
 		b. this is not dependent upon jquery or similar framework.
         
 	2. add script call to ajax data array in qualify.js:
-		a. getkeywords() added to array at leadOptional, example:
+		a. getCookie("organic") added to array at leadOptional, example:
         
         $.ajax({
 		url:strRoot+'lcs.php',
