@@ -33,5 +33,5 @@ A javascript file that when attched to a landing page which posts to the Enhance
 			'urlParams':window.location.search,
 			'referringSite':window.location.host,
 			'leadStep':'qual',
-	'leadOptional':getkeywords()
+	'leadOptional':getCookie("organic")
 		},
