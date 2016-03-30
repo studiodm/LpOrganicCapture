@@ -26,8 +26,8 @@ function getkeywords() {
   var x = document.referrer;
   var keywords = 0;
   if(x == null || x == 0){
-	  keyword="Direct";
-	  return keyword;
+	  keywords="Direct";
+	  return keywords;
   }
   if(getSemParams("PID") || getSemParams("pid") || getSemParams("gclid")){
 	  keywords="SEM (pid/gclid) String";
@@ -69,12 +69,16 @@ function getCookie(cname) {
     }
     return "";
 }
+function deleteCookie(cname){
+	setCookie(cname, "", -1);
+}
 
 function checkKeywordsExist() {
     var go=getCookie("organic");
 	var x = document.referrer;
 	var z = window.location.href;
-	if(x == null || x ==0){
+	if(x == null || x ==0 || x == "localhost"){
+		deleteCookie("organic");
 		setCookie("organic", "Direct", .0115);
 		return false;
 	}
